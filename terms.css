@@ -1,0 +1,85 @@
+.terms-section {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: left;
+    margin-top: 100px; /* Añadido para evitar solapamiento con el navbar de 100px */
+  }
+  
+  .terms-container {
+    max-width: 900px; /* Ancho máximo para pantallas grandes */
+    margin: 0 auto;
+    color: #333;
+  }
+  
+  .terms-container h2 {
+    font-size: 2em;
+    color: #4CAF50; /* Un color relacionado con la marca */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .terms-container h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .terms-container p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .terms-container a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .terms-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries para Responsividad */
+  @media (max-width: 768px) {
+    .terms-section {
+      margin-top: 100px; /* Mantener el margen para que no se solape con el navbar */
+    }
+  
+    .terms-container {
+      padding: 20px;
+    }
+  
+    .terms-container h2 {
+      font-size: 1.8em;
+    }
+  
+    .terms-container h3 {
+      font-size: 1.4em;
+    }
+  
+    .terms-container p {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .terms-section {
+      margin-top: 100px; /* Asegurar que el margen superior sigue estando en dispositivos pequeños */
+    }
+  
+    .terms-container h2 {
+      font-size: 1.5em;
+    }
+  
+    .terms-container h3 {
+      font-size: 1.2em;
+    }
+  
+    .terms-container p {
+      font-size: 0.95em;
+    }
+  
+    .terms-container a {
+      font-size: 0.9em;
+    }
+  }

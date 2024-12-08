@@ -388,6 +388,25 @@ footer {
   padding: 0 20px;
 }
 
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
 .social-media {
   margin-bottom: 10px;
 }
@@ -832,5 +851,77 @@ nav .hamburger span {
   .whatsapp-button {
       font-size: 0.9rem;
       padding: 0.5rem 1rem;
+  }
+}
+
+
+
+
+/* Botón flotante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366; /* Color verde de WhatsApp */
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1); /* Agranda ligeramente el botón al pasar el mouse */
+}
+
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-float img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .map-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-container {
+    height: 200px;
   }
 }

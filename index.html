@@ -12,7 +12,7 @@
  
   <header class="navbar">
     <div class="logo">
-      <img src="tierra_dulce_logo.png" alt="" >
+      <a href="index.html"><img src="tierra_dulce_logo.png" alt="" ></a>
     </div>
     
     <nav>
@@ -22,6 +22,7 @@
           <span></span>
       </button>
       <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#productos">Productos</a></li>
         <li><a href="#contact">Contáctanos</a></li>
@@ -116,7 +117,7 @@
     </form>
   </section> -->
 
-  <section id="contact" class="section">
+  <!-- <section id="contact" class="section">
     <div class="contact-container">
         <h2>¿Tienes alguna duda?</h2>
         <p>Contáctanos por WhatsApp y con gusto te ayudaremos.</p>
@@ -124,7 +125,20 @@
           <i class="fab fa-whatsapp"></i> Enviar mensaje
         </a>
     </div>
-</section>
+</section> -->
+
+<section id="contact" class="section">
+  <div class="map-container">
+    <!-- <div id="map"></div> -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.941303370843!2d-99.1561925248746!3d19.30285725195371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffd5cb6cc485%3A0x7f8d4e4c80d8c36!2sTorre%20Latinoamericana!5e0!3m2!1ses-419!2smx!4v1699885323456!5m2!1ses-419!2smx" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  </section>
+
 
     <footer>
       <div class="footer-container">
@@ -137,10 +151,50 @@
           </a>
          
         </div>
+        <div class="footer-links">
+          <a href="terminos.html" class="footer-link">Términos y Condiciones</a> |
+          <a href="aviso.html" class="footer-link">Aviso de Privacidad</a>
+        </div>
         <p class="copyright">&copy; 2024 Tierra dulce. Todos los derechos reservados.</p>
       </div>
     </footer>
 
+     <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/523332320081?text=Hola,%estoy%interesado%en%sus%servicios,%¿pueden%brindarme%más%información?" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
     <script src="script.js"></script>
+    <!-- API de Google Maps -->
+    <script>
+      // Inicializar el mapa
+      function initMap() {
+        // Centro del mapa (puedes ajustarlo según tus necesidades)
+        const center = { lat: 19.432608, lng: -99.133209 }; // Ciudad de México
+  
+        // Crear el mapa
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 5,
+          center: center,
+        });
+  
+        // Lista de ubicaciones
+        const locations = [
+          { lat: 19.432608, lng: -99.133209, title: "Ciudad de México" },
+          { lat: 20.659698, lng: -103.349609, title: "Guadalajara" },
+          { lat: 25.686613, lng: -100.316116, title: "Monterrey" },
+        ];
+  
+        // Agregar marcadores
+        locations.forEach((location) => {
+          new google.maps.Marker({
+            position: location,
+            map: map,
+            title: location.title,
+          });
+        });
+      }
+    </script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap"></script>
 </body>
 </html>
