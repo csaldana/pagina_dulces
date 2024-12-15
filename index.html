@@ -65,7 +65,7 @@
 
   
 
-  <section id="productos" class="product-section">
+  <!-- <section id="productos" class="product-section">
     <h2>Nuestros Productos</h2>
     <div class="product-grid">
       <div class="product-item">
@@ -93,7 +93,54 @@
         <button>Comprar ahora</button>
       </div>
     </div>
+  </section> -->
+
+  <section id="productos" class="product-section">
+        <h1>Productos</h1>
+        <p>Seleccione una categoría para ver los productos disponibles:</p>
+
+        <div class="categories">
+            <button onclick="filterProducts('all')">Todos</button>
+            <button onclick="filterProducts('category1')">Categoría 1</button>
+            <button onclick="filterProducts('category2')">Categoría 2</button>
+            <button onclick="filterProducts('category3')">Categoría 3</button>
+        </div>
+
+        <div class="products" id="productContainer">
+            <div class="product" data-category="category1">
+                <img src="https://via.placeholder.com/200" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Categoría 1</p>
+            </div>
+            <div class="product" data-category="category2">
+                <img src="https://via.placeholder.com/200" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Categoría 2</p>
+            </div>
+            <div class="product" data-category="category3">
+                <img src="https://via.placeholder.com/200" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>Categoría 3</p>
+            </div>
+            <div class="product" data-category="category1">
+                <img src="https://via.placeholder.com/200" alt="Producto 4">
+                <h3>Producto 4</h3>
+                <p>Categoría 1</p>
+            </div>
+            <div class="product" data-category="category2">
+                <img src="https://via.placeholder.com/200" alt="Producto 5">
+                <h3>Producto 5</h3>
+                <p>Categoría 2</p>
+            </div>
+            <div class="product" data-category="category2">
+              <img src="https://via.placeholder.com/200" alt="Producto 5">
+              <h3>Producto 6</h3>
+              <p>Categoría 2</p>
+          </div>
+        </div>
   </section>
+
+
 
     <section id="por-que-elegirnos" class="choose-us-section">
       <div class="choose-us-text">
