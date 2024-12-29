@@ -827,6 +827,7 @@ nav .hamburger span {
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .categories button {
@@ -848,9 +849,9 @@ nav .hamburger span {
 
 @media (max-width: 768px) {
   .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Fuerza dos columnas */
+    gap: 10px;
   }
 }
 

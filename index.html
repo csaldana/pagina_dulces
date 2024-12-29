@@ -162,12 +162,11 @@
 <section id="contact" class="section">
   <div class="map-container">
     <!-- <div id="map"></div> -->
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.941303370843!2d-99.1561925248746!3d19.30285725195371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffd5cb6cc485%3A0x7f8d4e4c80d8c36!2sTorre%20Latinoamericana!5e0!3m2!1ses-419!2smx!4v1699885323456!5m2!1ses-419!2smx" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.320594609757!2d-103.3907127241642!3d20.737795997707526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428af96aee0e277%3A0x9c0c34e66090bc93!2sProl.%20Pino%20Su%C3%A1rez%201091%2C%20El%20Vig%C3%ADa%2C%2045140%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1735501322105!5m2!1ses-419!2smx" 
+     allowfullscreen="" 
+     loading="lazy" 
+     referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   </section>
 
@@ -200,33 +199,33 @@
     <!-- API de Google Maps -->
     <script>
       // Inicializar el mapa
-      function initMap() {
-        // Centro del mapa (puedes ajustarlo según tus necesidades)
-        const center = { lat: 19.432608, lng: -99.133209 }; // Ciudad de México
+      // function initMap() {
+      //   // Centro del mapa (puedes ajustarlo según tus necesidades)
+      //   const center = { lat: 19.432608, lng: -99.133209 }; // Ciudad de México
   
-        // Crear el mapa
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 5,
-          center: center,
-        });
+      //   // Crear el mapa
+      //   const map = new google.maps.Map(document.getElementById("map"), {
+      //     zoom: 5,
+      //     center: center,
+      //   });
   
-        // Lista de ubicaciones
-        const locations = [
-          { lat: 19.432608, lng: -99.133209, title: "Ciudad de México" },
-          { lat: 20.659698, lng: -103.349609, title: "Guadalajara" },
-          { lat: 25.686613, lng: -100.316116, title: "Monterrey" },
-        ];
+      //   // Lista de ubicaciones
+      //   const locations = [
+      //     { lat: 19.432608, lng: -99.133209, title: "Ciudad de México" },
+      //     { lat: 20.659698, lng: -103.349609, title: "Guadalajara" },
+      //     { lat: 25.686613, lng: -100.316116, title: "Monterrey" },
+      //   ];
   
-        // Agregar marcadores
-        locations.forEach((location) => {
-          new google.maps.Marker({
-            position: location,
-            map: map,
-            title: location.title,
-          });
-        });
-      }
+      //   // Agregar marcadores
+      //   locations.forEach((location) => {
+      //     new google.maps.Marker({
+      //       position: location,
+      //       map: map,
+      //       title: location.title,
+      //     });
+      //   });
+      // }
     </script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap"></script>
+    <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap"></script> -->
 </body>
 </html>
